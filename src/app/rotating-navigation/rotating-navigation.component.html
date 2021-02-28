@@ -1,0 +1,38 @@
+<floating-back-btn></floating-back-btn>
+
+<div class="container" [ngClass]="{'show-nav': showNav}">
+    <div class="circle-container">
+        <div class="circle" [ngClass]="{'rotate': showNav}">
+            <button class="close" (click)="showNav = false">
+                <fa-icon [icon]="faTimes"></fa-icon>
+            </button>
+            <button class="open" (click)="showNav = true">
+                <fa-icon [icon]="faBars"></fa-icon>
+            </button>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1>Awesome Article</h1>
+        <small>Shrey Kumar Jain</small>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur velit dolore, dolorem necessitatibus molestiae assumenda. Corrupti quae atque tempore quasi ut sint distinctio eum vero non at iusto, nemo deserunt eveniet asperiores commodi exercitationem ullam! Voluptate natus ipsam similique at expedita nemo fugiat facilis iure soluta laudantium architecto accusamus eveniet, assumenda id! Blanditiis, magni excepturi. Earum ipsam incidunt unde deleniti, porro eius in quasi nemo. Nisi dolorem blanditiis molestiae maxime. Veniam et, minus mollitia molestias sint, consectetur incidunt amet assumenda similique facere quia ipsum ex asperiores, aspernatur maiores? Sint, fuga. Cupiditate pariatur unde itaque deserunt iusto fugiat odio ab adipisci!</p>
+
+        <h3>My Elephant</h3>
+        <img src="/assets/images/elephant.jpg" alt="my elephant">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem odit officiis fuga impedit aliquid ducimus nesciunt autem aspernatur possimus adipisci, molestiae numquam alias ullam, tempora quia veritatis vitae? Illo nesciunt enim neque. At aliquid recusandae aspernatur accusamus libero ratione voluptate odio. Debitis sit est accusamus magnam explicabo minima aut praesentium porro maiores quis, quibusdam voluptatem repudiandae amet harum excepturi et exercitationem eligendi pariatur. Necessitatibus dolor magnam, inventore vel molestiae eius aspernatur dicta nobis qui incidunt.</p>
+    </div>
+</div>
+
+<nav>
+    <ul>
+        <li [ngClass]="{'show': showNav}">
+            <fa-icon [icon]="faHome"></fa-icon> Home
+        </li>
+        <li [ngClass]="{'show': showNav}">
+            <fa-icon [icon]="faUserAlt"></fa-icon> About
+        </li>
+        <li [ngClass]="{'show': showNav}">
+            <fa-icon [icon]="faEnvelope"></fa-icon> Contact
+        </li>
+    </ul>
+</nav>

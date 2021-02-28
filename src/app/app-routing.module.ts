@@ -4,6 +4,7 @@ import { Routes, RouterModule, Router, NavigationStart } from '@angular/router';
 import { ExpandingCardsComponent } from './expanding-cards/expanding-cards.component';
 import { HomeComponent } from './home/home.component';
 import { ProgressStepsComponent } from './progress-steps/progress-steps.component';
+import { RotatingNavigationComponent } from './rotating-navigation/rotating-navigation.component';
 
 
 const routes: Routes = [
@@ -18,6 +19,10 @@ const routes: Routes = [
   {
     path: 'progress-steps',
     component: ProgressStepsComponent
+  },
+  {
+    path: 'rotating-navigation',
+    component: RotatingNavigationComponent
   },
   {
     path: '',

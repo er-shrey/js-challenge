@@ -1,0 +1,31 @@
+<floating-back-btn></floating-back-btn>
+
+<div class="container">
+    <div class="progress-container">
+        <div
+            class="progress"
+            [ngStyle]="{'width': progressWidth + '%'}"
+        ></div>
+        <div
+            class="circle"
+            *ngFor="let step of steps"
+            [ngClass]="{'active': currentstep >= step}"
+        >
+            {{step}}
+        </div>
+    </div>
+    <button
+        class="btn"
+        [disabled]="currentstep == 1"
+        (click)="setpBackward()"
+    >
+        Previous
+    </button>
+    <button
+        class="btn"
+        [disabled]="currentstep == steps[steps.length -1]"
+        (click)="setpForward()"
+    >
+        Next
+    </button>
+</div>

@@ -3,6 +3,7 @@ import { Title } from "@angular/platform-browser";
 import { Routes, RouterModule, Router, NavigationStart } from '@angular/router';
 import { ExpandingCardsComponent } from './expanding-cards/expanding-cards.component';
 import { HomeComponent } from './home/home.component';
+import { ProgressStepsComponent } from './progress-steps/progress-steps.component';
 
 
 const routes: Routes = [
@@ -13,6 +14,10 @@ const routes: Routes = [
   {
     path: 'expanding-cards',
     component: ExpandingCardsComponent
+  },
+  {
+    path: 'progress-steps',
+    component: ProgressStepsComponent
   },
   {
     path: '',

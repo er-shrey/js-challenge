@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ExpandingCardsComponent } from './expanding-cards/expanding-cards.component';
 import { FloatingBackBtnComponent } from './global/components/floating-back-btn/floating-back-btn.component';
+import { ProgressStepsComponent } from './progress-steps/progress-steps.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ExpandingCardsComponent,
-    FloatingBackBtnComponent
+    FloatingBackBtnComponent,
+    ProgressStepsComponent
   ],
   imports: [
     BrowserModule,

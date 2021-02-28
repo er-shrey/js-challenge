@@ -37,7 +37,7 @@ export class AppRoutingModule {
   ) {
     router.events.subscribe((val) => {
       if (val instanceof NavigationStart) {
-        let pageName = val.url.split('/')[1] ? val.url.split('/')[1] : 'Home';
+        let pageName = val.url.split('/')[1] ? val.url.split('/')[1] : 'home';
         let title = "JS Challenge: " + pageName;
         this.titleService.setTitle(title);
       }

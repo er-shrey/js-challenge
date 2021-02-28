@@ -1,2 +1,13 @@
 <floating-back-btn></floating-back-btn>
 
+<div class="container">
+    <div
+        class="panel"
+        *ngFor="let image of imageList"
+        [ngStyle]="{'background-image': 'url(assets/images/'+ image.image +')'}"
+        (click)="selectedImage = image.image;"
+        [ngClass]="{'active': selectedImage == image.image }"
+    >
+        <h3>{{image.title}}</h3>
+    </div>
+</div>

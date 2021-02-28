@@ -3,4 +3,41 @@
     height: 100%;
     width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+        display: flex;
+        width: 90%;
+        height: 80%;
+    }
+
+    .panel {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 80%;
+        border-radius: 50px;
+        color: #FFFFFF;
+        cursor: pointer;
+        flex: 0.5;
+        margin: 10px;
+        position: relative;
+        transition: flex 0.7s ease-in;
+
+        h3 {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            opacity: 0;
+        }
+
+        &.active {
+            flex: 5;
+
+            h3 {
+                opacity: 1;
+            }
+        }
+    }
 }

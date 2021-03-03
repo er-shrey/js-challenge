@@ -10,6 +10,7 @@ import { FloatingBackBtnComponent } from './global/components/floating-back-btn/
 import { ProgressStepsComponent } from './progress-steps/progress-steps.component';
 import { RotatingNavigationComponent } from './rotating-navigation/rotating-navigation.component';
 import { HiddenSearchComponent } from './hidden-search/hidden-search.component';
+import { BlurBackgroundComponent } from './blur-background/blur-background.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HiddenSearchComponent } from './hidden-search/hidden-search.component';
     FloatingBackBtnComponent,
     ProgressStepsComponent,
     RotatingNavigationComponent,
-    HiddenSearchComponent
+    HiddenSearchComponent,
+    BlurBackgroundComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Title } from "@angular/platform-browser";
 import { Routes, RouterModule, Router, NavigationStart } from '@angular/router';
+import { BlurBackgroundComponent } from './blur-background/blur-background.component';
 import { ExpandingCardsComponent } from './expanding-cards/expanding-cards.component';
 import { HiddenSearchComponent } from './hidden-search/hidden-search.component';
 import { HomeComponent } from './home/home.component';
@@ -28,6 +29,10 @@ const routes: Routes = [
   {
     path: 'hidden-search',
     component: HiddenSearchComponent
+  },
+  {
+    path: 'blur-background',
+    component: BlurBackgroundComponent
   },
   {
     path: '',

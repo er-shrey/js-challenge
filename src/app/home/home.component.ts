@@ -23,6 +23,10 @@ export class HomeComponent implements OnInit {
     {
       "link":"/hidden-search",
       "title":"Day 4: Hidden Search"
+    },
+    {
+      "link":"/blur-background",
+      "title":"Day 5: Blur Background"
     }
   ];
 

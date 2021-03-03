@@ -1,0 +1,12 @@
+<floating-back-btn></floating-back-btn>
+
+<section
+    class="background"
+    [ngStyle]="{'filter': blur}"
+></section>
+<div
+    class="loading-text"
+    [ngStyle]="{'opacity': (100 - load)/100}"
+>
+    {{load}}%
+</div>

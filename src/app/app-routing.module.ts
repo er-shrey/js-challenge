@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Title } from "@angular/platform-browser";
 import { Routes, RouterModule, Router, NavigationStart } from '@angular/router';
 import { ExpandingCardsComponent } from './expanding-cards/expanding-cards.component';
+import { HiddenSearchComponent } from './hidden-search/hidden-search.component';
 import { HomeComponent } from './home/home.component';
 import { ProgressStepsComponent } from './progress-steps/progress-steps.component';
 import { RotatingNavigationComponent } from './rotating-navigation/rotating-navigation.component';
@@ -23,6 +24,10 @@ const routes: Routes = [
   {
     path: 'rotating-navigation',
     component: RotatingNavigationComponent
+  },
+  {
+    path: 'hidden-search',
+    component: HiddenSearchComponent
   },
   {
     path: '',

@@ -1,0 +1,6 @@
+<div class="search" [ngClass]="{'active': searching}">
+    <input type="text" class="input" placeholder="Search...">
+    <button class="btn" (click)="searching = !searching">
+        <fa-icon [icon]="faSearch"></fa-icon>
+    </button>
+</div>

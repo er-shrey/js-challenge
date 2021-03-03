@@ -9,6 +9,7 @@ import { ExpandingCardsComponent } from './expanding-cards/expanding-cards.compo
 import { FloatingBackBtnComponent } from './global/components/floating-back-btn/floating-back-btn.component';
 import { ProgressStepsComponent } from './progress-steps/progress-steps.component';
 import { RotatingNavigationComponent } from './rotating-navigation/rotating-navigation.component';
+import { HiddenSearchComponent } from './hidden-search/hidden-search.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { RotatingNavigationComponent } from './rotating-navigation/rotating-navi
     ExpandingCardsComponent,
     FloatingBackBtnComponent,
     ProgressStepsComponent,
-    RotatingNavigationComponent
+    RotatingNavigationComponent,
+    HiddenSearchComponent
   ],
   imports: [
     BrowserModule,

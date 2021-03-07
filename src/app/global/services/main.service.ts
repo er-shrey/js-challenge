@@ -40,7 +40,7 @@ export class MainService {
     {
       "link":"/split-landing-page",
       "title":"Day 7: Split Landing Page",
-      "active": false
+      "active": true
     },
     {
       "link":"/form-wave-animation",

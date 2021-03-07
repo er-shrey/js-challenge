@@ -84,7 +84,7 @@ const routes: Routes = [
     component: ScrollAnimationComponent
   },
   {
-    path: 'split-landing-page"',
+    path: 'split-landing-page',
     component: SplitLandingPageComponent
   },
   {

@@ -1,1 +1,23 @@
-<p>split-landing-page works!</p>
+<floating-back-btn></floating-back-btn>
+
+<div
+    class="container"
+    [ngClass]="{'hover-left': hoverOn == 'left', 'hover-right': hoverOn == 'right'}"
+>
+    <div
+        class="split left"
+        (mouseenter)="hoverOn ='left'"
+        (mouseleave)="hoverOn =''"
+    >
+        <h1>Playstation 5</h1>
+        <button class="btn">Buy Now</button>
+    </div>
+    <div
+        class="split right"
+        (mouseenter)="hoverOn ='right'"
+        (mouseleave)="hoverOn =''"
+    >
+        <h1>XBox Series X</h1>
+        <button class="btn">Buy Now</button>
+    </div>
+</div>

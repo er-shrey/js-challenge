@@ -1,15 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterContentInit, Component } from '@angular/core';
 
 @Component({
-  selector: 'app-form-wave-animation',
+  selector: 'form-wave-animation',
   templateUrl: './form-wave-animation.component.html',
   styleUrls: ['./form-wave-animation.component.scss']
 })
-export class FormWaveAnimationComponent implements OnInit {
+export class FormWaveAnimationComponent implements AfterContentInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngAfterContentInit(): void {
+    const labels  = document.querySelectorAll('.form-control label');
+
+    labels.forEach(label => {
+      label.innerHTML = label.innerHTML.split('')
+                        .map((letter, index) => {
+                          return `<span style="transition-delay:${index * 50}ms">${letter}</span>`
+                        }).join('');
+    });
   }
 
 }

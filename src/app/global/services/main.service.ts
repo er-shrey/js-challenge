@@ -45,7 +45,7 @@ export class MainService {
     {
       "link":"/form-wave-animation",
       "title":"Day 8: Form Wave Animation",
-      "active": false
+      "active": true
     },
     {
       "link":"/sound-board",

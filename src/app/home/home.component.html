@@ -1,1 +1,1 @@
-<button *ngFor="let link of linkList" class="btn" [routerLink]="link.link">{{link.title}}</button>
+<button *ngFor="let link of linkList" class="btn" [routerLink]="link.link" [disabled]="!link.active">{{link.title}}</button>

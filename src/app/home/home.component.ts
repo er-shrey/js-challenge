@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { challenge } from '../global/modules/interfaces.module';
+import { MainService } from '../global/services/main.service';
 
 @Component({
   selector: 'home',
@@ -7,32 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  linkList = [
-    {
-      "link":"/expanding-cards",
-      "title":"Day 1: Expanding Cards"
-    },
-    {
-      "link":"/progress-steps",
-      "title":"Day 2: Progress Steps"
-    },
-    {
-      "link":"/rotating-navigation",
-      "title":"Day 3: Rotating Navigation"
-    },
-    {
-      "link":"/hidden-search",
-      "title":"Day 4: Hidden Search"
-    },
-    {
-      "link":"/blur-background",
-      "title":"Day 5: Blur Background"
-    }
-  ];
+  linkList: challenge[] = [];
 
-  constructor() { }
+  constructor(
+    private _mainservice: MainService
+  ) { }
 
   ngOnInit(): void {
+    this.linkList = this._mainservice.challenges;
   }
 
 }

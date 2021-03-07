@@ -11,6 +11,7 @@ import { ProgressStepsComponent } from './progress-steps/progress-steps.componen
 import { RotatingNavigationComponent } from './rotating-navigation/rotating-navigation.component';
 import { HiddenSearchComponent } from './hidden-search/hidden-search.component';
 import { BlurBackgroundComponent } from './blur-background/blur-background.component';
+import { ScrollAnimationComponent } from './scroll-animation/scroll-animation.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { BlurBackgroundComponent } from './blur-background/blur-background.compo
     ProgressStepsComponent,
     RotatingNavigationComponent,
     HiddenSearchComponent,
-    BlurBackgroundComponent
+    BlurBackgroundComponent,
+    ScrollAnimationComponent
   ],
   imports: [
     BrowserModule,

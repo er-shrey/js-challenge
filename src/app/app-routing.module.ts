@@ -7,6 +7,7 @@ import { HiddenSearchComponent } from './hidden-search/hidden-search.component';
 import { HomeComponent } from './home/home.component';
 import { ProgressStepsComponent } from './progress-steps/progress-steps.component';
 import { RotatingNavigationComponent } from './rotating-navigation/rotating-navigation.component';
+import { ScrollAnimationComponent } from './scroll-animation/scroll-animation.component';
 
 
 const routes: Routes = [
@@ -33,6 +34,10 @@ const routes: Routes = [
   {
     path: 'blur-background',
     component: BlurBackgroundComponent
+  },
+  {
+    path: 'scroll-animation',
+    component: ScrollAnimationComponent
   },
   {
     path: '',

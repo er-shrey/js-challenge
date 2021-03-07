@@ -1,1 +1,13 @@
 <floating-back-btn></floating-back-btn>
+
+<div class="container" (scroll)="scrollHandler($event)">
+    <h1>Scroll to see animation</h1>
+
+    <div #ref
+        class="box"
+        *ngFor="let box of boxes"
+        [ngClass]="{'show': showBox(ref)}"
+    >
+        <span>Content: {{box}}</span>
+    </div>
+</div>

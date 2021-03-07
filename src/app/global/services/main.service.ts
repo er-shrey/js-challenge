@@ -35,7 +35,7 @@ export class MainService {
     {
       "link":"/scroll-animation",
       "title":"Day 6: Scroll Animation",
-      "active": false
+      "active": true
     },
     {
       "link":"/split-landing-page",

@@ -1,27 +1,44 @@
-# JsChallenge
+# JS Challenge (50 Days)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.9.
+A 50-day JavaScript UI/frontend challenge implemented as a single Angular application, where each day's exercise (animated counters, drag-and-drop, quiz app, password generator, Netflix-style navigation, etc.) is its own Angular component/route.
 
-## Development server
+## Tech Stack
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Angular 9 (`@angular/core` ~9.1.11), TypeScript ~3.8
+- Angular CLI, Karma + Jasmine (unit tests), Protractor (e2e)
+- Font Awesome via `@fortawesome/angular-fontawesome`
 
-## Code scaffolding
+## Prerequisites
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Node.js and npm compatible with Angular 9 (Node 10–12 recommended)
+- Angular CLI: `npm install -g @angular/cli@9`
+
+## Installation
+
+```bash
+npm install
+```
+
+## Run (dev server)
+
+```bash
+npm start        # runs `ng serve --open`, opens http://localhost:4200/
+```
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+```bash
+npm run build     # output to dist/
+```
 
-## Running unit tests
+## Tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+npm test          # unit tests via Karma/Jasmine
+npm run e2e       # end-to-end tests via Protractor
+npm run lint      # tslint
+```
 
-## Running end-to-end tests
+## Project Structure
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Each challenge lives in its own folder under `src/app/`, e.g. `expanding-cards`, `drag-n-drop`, `quizz-app`, `password-generator`, `netflix-navigation`, `todo-list`, `movie-app`, `drawing-app`, and more (~50 total). Routing between them is defined in `src/app/app-routing.module.ts`.
